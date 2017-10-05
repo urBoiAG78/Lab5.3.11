@@ -36,12 +36,17 @@ public:
     DummyAnimal(); 
 };
 
-DummyAnimal::DummyAnimal() : FarmAnimal(10.0) {
+DummyAnimal::DummyAnimal() : FarmAnimal(10.0) 
+{
+
 }
+
 class DoublingAnimal : public FarmAnimal {
 public:
-DoublingAnimal(double given_water_consumption); };
-DoublingAnimal::DoublingAnimal(double given_water_consumption) : FarmAnimal(2 * given_water_consumption) {
+    DoublingAnimal(double given_water_consumption); 
+};
+DoublingAnimal::DoublingAnimal(double given_water_consumption) 
+: FarmAnimal(2 * given_water_consumption) {
 }
 void printConsumption(FarmAnimal "animal") 
 {
